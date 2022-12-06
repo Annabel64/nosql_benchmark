@@ -2,6 +2,9 @@
 
 This repo a simple test to see how the number of shards affects the performance of a MongoDB cluster.
 
+# TL;DR
+![Benchmark results](/results/benchmark_viz.png)
+
 # Setup
 We have a set of 8 VMs.
 Each VM has 4 cores and 16GB of RAM.
@@ -19,8 +22,9 @@ We are using the [following script](/todo) to denormalize the data and insert it
 After some testing, we found that the best shard key is the `investigator.email_id` field.
 
 # Results
-## Compute
+## Computing method
 You can find the notebook we used to compute the metrics [here](/benchmark_shards.ipynb).
+Each of our 8 queries is run 10 times. The min and max values are excluded and the average is then computed and stored. 
 
 ## Vizualization
 You can find the notebook we used to vizualize the metrics [here](/benchmark_viz.ipynb).
