@@ -3,8 +3,8 @@
 This repo a simple test to see how the number of shards affects the performance of a MongoDB cluster.
 
 # TL;DR
-![Benchmark results](\results\images\benchmark_query_for_each_shard_white.svg)
-![Benchmark results](\results\images\benchmark_sharding_for_each_query_white.png)
+![Benchmark results](/results/images/benchmark_query_for_each_shard_white.svg)
+![Benchmark results](/results/images/benchmark_sharding_for_each_query_white.png)
 
 # Setup
 We have a set of 8 VMs.
